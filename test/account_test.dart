@@ -19,6 +19,15 @@ void main() {
     'Account Transfer Tests',
     () {
       test(
+        'Teste de uma nova transferencia',
+        () {
+          account.transfer(50);
+
+          expect(account.balance, 50);
+        },
+      );
+
+      test(
         'Deve atualizar corretamente o valor do saldo quando a transferencia for validada',
         () {
           account.transfer(100);
