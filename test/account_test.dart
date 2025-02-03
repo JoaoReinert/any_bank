@@ -93,7 +93,8 @@ void main() {
               nome: 'Claudio',
               cpf: '2222222',
               balance: 100,
-              accountType: AccountType.investment);
+              accountType: AccountType.investment,
+              );
 
           investmentAccount.applyInterest();
           expect(investmentAccount.balance, 107);
