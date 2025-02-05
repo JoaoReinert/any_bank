@@ -97,7 +97,7 @@ void main() {
               accountType: AccountType.investment);
 
           investmentAccount.applyInterest();
-          expect(investmentAccount.balance, 107);
+          expect(investmentAccount.balance, 108);
         },
       );
     },
